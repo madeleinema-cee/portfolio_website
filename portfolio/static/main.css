@@ -1,0 +1,710 @@
+:root {
+    --bgcolor: #006d77;
+    --timber: #83c5be;
+    --ebony: #ebf6f5;
+    --candy: #ffddd2
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgcolor) ;
+    font-family: Ubuntu , sans-serif;
+    color: var(--ebony);
+    font-size: medium;
+}
+
+.bg-color1{
+    background-color: var(--timber);
+}
+
+.site-header .navbar-nav .nav-link {
+    color: var(--ebony);
+    padding: 15px;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: var(--ebony);
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 800;
+    color: var(--ebony);
+}
+
+.navbar {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: fixed;
+    top: -50px;
+    display: block;
+    transition: top -0.3s;
+}
+
+.navbar-nav{
+    margin-left: 10px;
+}
+
+.page-header {
+    font-family: 'Nunito', sans-serif;
+    padding-top: 10px;
+    color: var(--ebony);
+}
+
+.page-header:hover{
+    text-decoration: none;
+    color: var(--ebony);
+}
+
+
+@media screen and (min-width: 701px) {
+    div.home-body {
+        font-size: xx-large;
+        color: var(--bgcolor);
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 25px;
+
+    }
+    div.home-section {
+        background-color: var(--timber);
+        background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+        padding: 30px;
+        height: 100vh;
+
+}
+
+}
+
+@media screen and (max-width: 700px) {
+    div.home-body {
+        font-size: large;
+        color: var(--bgcolor);
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+    }
+    div.home-section {
+        background-color: var(--timber);
+        background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+        height: 100vh;
+        padding: 15px;
+}
+    div.home-content {
+        font-size: smaller;
+    }
+    div.center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1px;
+        height: 150px;
+        width: auto;
+}
+    div.page-header {
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1px;
+        font-size: x-small;
+}
+}
+
+.center-img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding-top: 90px;
+    padding-bottom: 1px;
+}
+
+.home-content {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: large;
+    color: var(--ebony);
+    font-weight: bolder;
+    display: block;
+}
+
+.about-section{
+    padding: 20px 0;
+    background-color: var(--ebony);
+}
+.about-header {
+    padding: 5px;
+    padding-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: var(--timber);
+    text-align: center;
+}
+
+.about-content {
+    color: var(--bgcolor);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.skill-title {
+    font-family: Nunito, sans-serif;
+    font-size: 30px;
+    color: var(--timber);
+    padding: 10px;
+    text-align: center;
+}
+
+.skill{
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--candy);
+    border-radius: 20px;
+    color: var(--bgcolor);
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+}
+
+.service-section {
+    margin: 10px;
+    text-align: center;
+}
+
+.service-item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: var(--timber);
+}
+
+.service-content {
+    font-family: Comfortaa, sans-serif;
+    color: var(--timber)
+}
+
+.project-section {
+    background-color: var(--ebony);
+    color: var(--ebony);
+    padding-top: 40px;
+}
+
+.project-header {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: var(--timber);
+}
+
+.project-content {
+    font-family: Comfortaa, sans-serif;
+    color: var(--timber);
+    padding-bottom: 10px;
+}
+
+.project {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.project-title {
+    font-family: Ubuntu,sans-serif;
+    color: var(--bgcolor);
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-title:hover{
+    text-decoration: none;
+    color: var(--timber);
+
+}
+
+.project-intro {
+    padding-bottom: 20px;
+    color: var(--timber);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--ebony);
+}
+
+.image:hover .overlay {
+  opacity: 80%;
+}
+
+.text {
+    font-family: 'Bangers', cursive;
+    color: #fca311;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text:hover {
+    text-decoration: none;
+    color: #fca311;
+}
+
+.nav-item {
+    font-family: Comfortaa, sans-serif;
+    font-size: small;
+    color: var(--ebony);
+    padding: 5px;
+}
+
+.nav-item:hover {
+    font-weight: bolder;
+
+}
+
+.card-deck {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    background-color: var(--ebony);
+    box-shadow: 0 4px 8px 0 grey;
+    margin: 20px;
+}
+
+.btn-section1 {
+    background-color: var(--ebony);
+    border: 1px var(--timber) solid;
+    color: var(--timber);
+}
+
+.btn-section1:hover {
+    background-color: var(--timber);
+    color: var(--bgcolor);
+}
+
+.modal-title {
+    color: var(--bgcolor);
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding-left: 30px;
+    font-family: Nunito, sans-serif;
+}
+
+.modal-image {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal-intro {
+    color: var(--bgcolor)
+}
+
+.modal-feature-title {
+    color: var(--timber);
+    font-size: x-large;
+}
+
+
+@media screen and (min-width: 701px) {
+    div.form-group {
+        margin: auto;
+        width: 50%;
+    }
+    div.foot-section {
+        margin: auto;
+        width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+}
+
+@media screen and (max-width: 700px) {
+
+    div.foot-section {
+        margin: auto;
+        width: 99%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+}
+
+
+.form-control{
+    background-color: var(--bgcolor);
+    border: solid 2px var(--timber);
+    color: var(--ebony);
+    margin: 10px 0;
+}
+
+.submit {
+    text-align: left;
+}
+
+.btn-section {
+    color: var(--timber);
+    background-color: var(--ebony);
+    margin-bottom: 5px;
+}
+
+.btn-section:hover {
+    color: var(--bgcolor);
+    background-color: var(--timber);
+}
+
+.btn-section2 {
+    color: var(--timber);
+    background-color: var(--ebony);
+    margin-top: 15px;
+}
+
+.btn-section2:hover{
+    color: var(--timber);
+    opacity: 0.8;
+}
+
+.footer-section {
+    background-color: var(--bgcolor);
+    background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+    color: var(--ebony);
+}
+
+.contact {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 15px;
+}
+
+
+
+.footer-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: var(--ebony);
+}
+
+.buttons {
+    text-align: center;
+    margin: 1px;
+}
+
+.icon {
+    color: var(--candy);
+    padding: 10px;
+}
+
+.icon:hover {
+    color: var(--ebony)
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copy-link{
+    color: var(--timber)
+}
+
+.copy-link:hover {
+    color: var(--ebony)
+}
+
+.upwork {
+    vertical-align: -15px;
+}
+
+.separation {
+    padding: 20px 1px;
+    text-align: center;
+    opacity: 40%;
+    font-size: xx-small;
+    color: var(--timber);
+}
+
+.contact-header {
+    padding-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    color: var(--timber);
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover, .dot.active {
+  background-color: var(--bgcolor);
+}
+
+
+.chrome {
+    margin-top: 20px;
+    border: 3px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.top {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.g-recaptcha {
+    width: 50%;
+}
+
+.body {
+    background-color: whitesmoke;
+    border: 3px solid black;
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ears {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    right: -10px;
+    height: 50px;
+    width: 200px;
+    transform: translateX(-50%);
+
+}
+
+.ears:before,
+.ears:after {
+    content: "";
+    background-color: black;
+    width:50px;
+    height: 50px;
+    float: left;
+    border-radius: 30px;
+    transform: rotate(-45deg);
+}
+
+.ears:after {
+    float: right;
+    transform: rotate(45deg);
+}
+
+.eyes {
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    top: 60px;
+    transform: translateX(-50%);
+}
+
+.eyes:before,
+.eyes:after {
+    content: "";
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: right;
+}
+.eyes:after {
+    float: left;
+}
+
+.eyeballs {
+    position: absolute;
+    left: 50%;
+    width: 75px;
+    top: 10px;
+    transform: translateX(-50%);
+}
+
+.eyeballs:before,
+.eyeballs:after {
+    content: "";
+    background-color: whitesmoke;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    float: right;
+}
+.eyeballs:after {
+    float: left;
+}
+
+.nose {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%);
+
+}
+.nose:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    bottom: 3px;
+    background-color: black;
+    width: 3px;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+
+.nose:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    border: 8px solid transparent;
+    border-top-color: black;
+    border-radius: 8px;
+    transform: translateX(-50%);
+}
+
+
+.mouth {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    z-index: 1;
+}
+
+
+.mouth2 {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 7px;
+    bottom: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    z-index: 1;
+}
+
+.tongue {
+    display: block;
+    width: 15px;
+    height: 21px;
+    border-radius: 20px;
+    border: solid 1px indianred;
+    background-color: indianred;
+    border-top-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 121px;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.slideshow-container{
+    position: relative;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(131, 197, 190, 0.7);
+    font-weight: bold;
+    font-size: larger;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.color1 {
+    color: black;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  opacity: 50%;
+}
+
+a.hover {
+    text-decoration: none;
+}
+
+ul {
+    color: var(--bgcolor);
+}
+
+.animation {
+    animation: bounce;
+    animation-duration: 2s;
+    animation-delay: .5s;
+}
+
+.link {
+    color: var(--timber)
+}
+
+.link:hover{
+    color: var(--timber);
+    text-decoration: none;
+}
+
+.alert{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 10px;
+    width: 80%;
+}
