@@ -63,7 +63,7 @@ $(window).on("load",function(){
         $(".skill").removeClass("invisible").addClass("animate__animated animate__pulse animate__delay-1s animate__faster");
 
     }
-    if(winTop >= service-300){
+    if(winTop >= service-400){
         $(".service-title").removeClass("invisible").addClass("animate__animated animate__fadeInDown animate__delay-0.5s animate__faster");
         $(".service1").removeClass("invisible").addClass("animate__animated animate__fadeInLeftBig ");
         $(".service2").removeClass("invisible").addClass("animate__animated animate__fadeInRightBig ");
