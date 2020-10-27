@@ -71,7 +71,6 @@ $(window).on("load",function(){
     }}
 });
 
-
     function toggleHidden(divId) {
         row = document.getElementById(divId);
         if (row.style.display === 'none') {
@@ -80,7 +79,6 @@ $(window).on("load",function(){
             row.style.display = 'none'
         }
     }
-
 
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
