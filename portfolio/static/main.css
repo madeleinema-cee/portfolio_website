@@ -708,3 +708,14 @@ ul {
     right: 10px;
     width: 80%;
 }
+
+.walletlogo {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
+
+.walle-img {
+    height: 400px;
+    overflow-y: scroll;
+}

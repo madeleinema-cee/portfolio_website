@@ -8,6 +8,7 @@ $(window).on("load",function(){
     var project1 = $("#project1").offset().top;
     var project2 = $("#project-2").offset().top;
     var project3 = $("#project-3").offset().top;
+    var project4 = $("#project-4").offset().top;
     var about = $("#about").offset().top;
     var skill = $("#skill").offset().top;
     var service = $("#service").offset().top;
@@ -24,6 +25,8 @@ $(window).on("load",function(){
         $(".project2").removeClass("invisible");
         $(".project3-img").removeClass("invisible");
         $(".project3").removeClass("invisible");
+        $(".project4-img").removeClass("invisible");
+        $(".project4").removeClass("invisible");
         $(".aboutme").removeClass("invisible");
         $(".about-content").removeClass("invisible");
         $(".skill-title").removeClass("invisible");
@@ -37,18 +40,24 @@ $(window).on("load",function(){
     else {
               //project section
           if(winTop >= project1-180) {
-              $(".project1-img").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
-              $(".project1").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
+              $(".project1-img").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
+              $(".project1").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
           }
            if(winTop >= project2-180) {
-              $(".project2-img").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
-              $(".project2").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
+              $(".project2-img").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
+              $(".project2").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
           }
 
            if(winTop >= project3-180) {
-              $(".project3-img").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
-              $(".project3").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
+              $(".project3-img").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
+              $(".project3").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
           }
+
+           if(winTop >= project4-180) {
+              $(".project4-img").removeClass("invisible").addClass("animate__animated animate__fadeInLeft");
+              $(".project4").removeClass("invisible").addClass("animate__animated animate__fadeInRight");
+          }
+
 
 
         //animated classes

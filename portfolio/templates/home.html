@@ -1,114 +1,149 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div id="home" class="home-section">
-    <div class="center">
-        <img class="center-img revealOnScroll animate__animated animate__fadeInDown" src="static/profile.png" alt="profile picture" data-timeout="400">
-        <div class="home-body animate__animated animate__fadeInUp">
-            I Am Madeleine, A Web & Software Developer.
-        </div>
-        <div class="home-content animate__animated animate__fadeInUp">
-            I build responsive, customized, functional websites and Saas apps.
-            <br>
-            <br>
-            <a href="#project" id="icon" onclick="toggleHidden('icon')"><i class='fa fa-arrow-circle-down icon animation animate__repeat-2' style='font-size:36px'></i></a>
-        </div>
+    <div id="home" class="home-section">
+        <div class="center">
+            <img class="center-img revealOnScroll animate__animated animate__fadeInDown" src="static/profile.png"
+                 alt="profile picture" data-timeout="400">
+            <div class="home-body animate__animated animate__fadeInUp">
+                I Am Madeleine, A Web & Software Developer.
+            </div>
+            <div class="home-content animate__animated animate__fadeInUp">
+                I build responsive, customized, and functional websites and Saas apps.
+                <br>
+                <br>
+                <a href="#project" id="icon" onclick="toggleHidden('icon')"><i
+                    class='fa fa-arrow-circle-down icon animation animate__repeat-2' style='font-size:36px'></i></a>
+            </div>
 
+        </div>
     </div>
-</div>
 
 
-<div id="project" class="project-section">
-    <div class="project-header">PROJECTS</div>
-    <div class="container">
-<!--        project1-->
-        <div class="row">
-            <div class="col-md-6 image invisible project1-img">
-                <img src="static/project_pictures/comicwishlist.png" alt="project1-img">
-                <div class="overlay">
-                    <a class="text" href="https://comiccollection.madeleinema.com/">COMIC COLLECTION</a>
+    <div id="project" class="project-section">
+        <div class="project-header">PROJECTS</div>
+        <div class="container">
+            <!--project4-->
+            <div class="row">
+                <div class="col-md-6 image invisible project1-img order-md-last">
+                    <img src="static/project_pictures/walletwatch1.png" alt="project1-img">
+                    <div class="overlay">
+                        <a class="text" href="https://walletwatch.xyz/"><img class="walletlogo"
+                                                                             src="static/project_pictures/walletLogo.png"
+                                                                             alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-first">
+                    <div class="project project1 invisible">
+                        <a class="project-title" href="https://walletwatch.xyz/">WALLET WATCH</a>
+                        <div class="project-intro">A data visualizing and tracking website for bitcoin investment.</div>
+                        <div class="project-intro">React▪Python▪Flask▪CSS</div>
+                        <a class="btn btn-section1" data-toggle="modal" data-target="#project4-modal" href="#">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="project project1 invisible">
-                    <a class="project-title" href="https://comiccollection.madeleinema.com/">COMIC COLLECTION</a>
-                    <div class="project-intro">A comic collection searching and displaying website.</div>
-                    <div class="project-intro">Python▪Flask▪HTML▪CSS▪JS</div>
-                    <a class="btn btn-section1" data-toggle="modal" data-target="#project1-modal" href="#">Read More</a>
+            <div class="separation" id="project-2">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
+
+            <!--    project1-->
+            <div class="row">
+                <div class="col-md-6 image invisible project2-img">
+                    <img src="static/project_pictures/comicwishlist.png" alt="project2-img">
+                    <div class="overlay">
+                        <a class="text" href="https://comiccollection.madeleinema.com/">COMIC COLLECTION</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project project2 invisible">
+                        <a class="project-title" href="https://comiccollection.madeleinema.com/">COMIC COLLECTION</a>
+                        <div class="project-intro">A comic collection searching and displaying website.</div>
+                        <div class="project-intro">Python▪Flask▪HTML▪CSS▪JS</div>
+                        <a class="btn btn-section1" data-toggle="modal" data-target="#project1-modal" href="#">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="separation" id="project-2">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
+            <div class="separation" id="project-3">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
 
-<!--    project2-->
-        <div class="row">
-            <div class="col-md-6 image invisible project2-img order-md-last">
-                <img src="static/project_pictures/blogpicture.png" alt="blogpicture">
-                <div class="overlay">
-                    <a class="text" href="http://jewelofchina.com"><img src="static/project_pictures/logo.png" alt="logo"></a>
+            <!--    project2-->
+            <div class="row">
+                <div class="col-md-6 image invisible project3-img order-md-last">
+                    <img src="static/project_pictures/blogpicture.png" alt="blogpicture">
+                    <div class="overlay">
+                        <a class="text" href="http://jewelofchina.com"><img src="static/project_pictures/logo.png"
+                                                                            alt="logo"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 order-md-first">
-                <div class="project image invisible project2">
-                    <a href="http://jewelofchina.com" class="project-title">JEWEL OF CHINA</a>
-                    <div class="project-intro">A translation sharing blog for classical Chinese enthusiasts.</div>
-                    <div class="project-intro">Python▪Flask▪HTML▪CSS</div>
-                    <a class="btn btn-section1" data-toggle="modal" data-target="#project2-modal" href="#">Read More</a>
+                <div class="col-md-6 order-md-first">
+                    <div class="project image invisible project3">
+                        <a href="http://jewelofchina.com" class="project-title">JEWEL OF CHINA</a>
+                        <div class="project-intro">A translation sharing blog for classical Chinese enthusiasts.</div>
+                        <div class="project-intro">Python▪Flask▪HTML▪CSS</div>
+                        <a class="btn btn-section1" data-toggle="modal" data-target="#project2-modal" href="#">Read
+                            More</a>
+                    </div>
                 </div>
+
             </div>
+            <div class="separation" id="project-4">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
 
-        </div>
-        <div class="separation" id="project-3">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
-
-<!--        project 3-->
-        <div class="row">
-            <div class="col-md-6 image invisible project3-img">
-                <img src="static/project_pictures/game1.png" alt="gamepicture">
-                <div class="overlay">
-                    <a class="text" href="https://animalgame.madeleinema.com/home">
-                        <div class="container">
-                            <div class="ears"></div>
+            <!--        project 3-->
+            <div class="row">
+                <div class="col-md-6 image invisible project4-img">
+                    <img src="static/project_pictures/game1.png" alt="gamepicture">
+                    <div class="overlay">
+                        <a class="text" href="https://animalgame.madeleinema.com/home">
+                            <div class="container">
+                                <div class="ears"></div>
                                 <div class="body">
                                     <div class="eyes">
                                         <div class="eyeballs"></div>
                                     </div>
                                     <div class="nose">
-                                    <div class="mouth"></div>
-                                    <div class="mouth2"></div>
+                                        <div class="mouth"></div>
+                                        <div class="mouth2"></div>
                                     </div>
                                 </div>
-                            <div class="tongue"></div>
+                                <div class="tongue"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project project4 invisible">
+                        <a href="http://animalgame.madeleinema.com" class="project-title">THINK OF ANIMAL</a>
+                        <div class="project-intro">An interactive guessing game based on a database of animals and their
+                            features.
                         </div>
-                    </a>
+                        <div class="project-intro">Python▪Flask▪HTML▪CSS</div>
+                        <a class="btn btn-section1" data-toggle="modal" data-target="#project3-modal" href="#">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
+            <div class="separation" id="about">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
 
-            <div class="col-md-6">
-                <div class="project project3 invisible">
-                    <a href="http://animalgame.madeleinema.com" class="project-title">THINK OF ANIMAL</a>
-                    <div class="project-intro">An interactive guessing game based on a database of animals and their features.</div>
-                    <div class="project-intro">Python▪Flask▪HTML▪CSS</div>
-                    <a class="btn btn-section1" data-toggle="modal" data-target="#project3-modal" href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="separation" id="about">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
-
-        <!--        project1 modal-->
-            <div class="modal fade bd-modal-lg" id="project1-modal" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
+            <!--        project1 modal-->
+            <div class="modal fade bd-modal-lg" id="project1-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="project1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="project1">COMIC COLLECTION</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="slideshow-container">
-                            <img class="modal-image slides1" src="static/project_pictures/comic1.png" style="width:100%" alt="project1 image1">
-                            <img class="modal-image slides1" src="static/project_pictures/comic2.png" style="width:100%" alt="project1 image2">
-                            <img class="modal-image slides1" src="static/project_pictures/comic3.png" style="width:100%" alt="project1 image3">
-                            <img class="modal-image slides1" src="static/project_pictures/comic4.png" style="width:100%" alt="project1 image3">
+                            <img class="modal-image slides1" src="static/project_pictures/comic1.png" style="width:100%"
+                                 alt="project1 image1">
+                            <img class="modal-image slides1" src="static/project_pictures/comic2.png" style="width:100%"
+                                 alt="project1 image2">
+                            <img class="modal-image slides1" src="static/project_pictures/comic3.png" style="width:100%"
+                                 alt="project1 image3">
+                            <img class="modal-image slides1" src="static/project_pictures/comic4.png" style="width:100%"
+                                 alt="project1 image3">
                             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides1(1)">&#10095;</a>
                             <div class="imgchange" style="text-align:center">
@@ -120,7 +155,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-intro">
-                                Comic Collection is a database searching and displaying engine made with the Python Flask.
+                                Comic Collection is a database searching and displaying engine made with the Python
+                                Flask.
                                 As the client requested, a clean and fast phone display of
                                 the comic wishlist and active collection is the highlights of this app.
                                 Through easy steps of converting original data,
@@ -143,28 +179,32 @@
                                 <li>Based on Bootstrap</li>
                             </ul>
                         </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-section1" href="https://comiccollection.madeleinema.com/">View Website</a>
-                        <a class="btn btn-section1" href="https://github.com/mayue3081249/comic_wishlist">Github</a>
+                        <div class="modal-footer">
+                            <a class="btn btn-section1" href="https://comiccollection.madeleinema.com/">View Website</a>
+                            <a class="btn btn-section1" href="https://github.com/mayue3081249/comic_wishlist">Github</a>
+                        </div>
                     </div>
                 </div>
-              </div>
             </div>
 
             <!--        project2 modal-->
-            <div class="modal fade bd-modal-lg" id="project2-modal" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
+            <div class="modal fade bd-modal-lg" id="project2-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="project1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="project2">JEWEL OF CHINA</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="slideshow-container">
-                            <img class="modal-image slides2" src="static/project_pictures/blog3.png" style="width:100%" alt="project1 image1">
-                            <img class="modal-image slides2" src="static/project_pictures/blog4.png" style="width:100%" alt="project1 image2">
-                            <img class="modal-image slides2" src="static/project_pictures/blog5.png" style="width:100%" alt="project1 image3">
+                            <img class="modal-image slides2" src="static/project_pictures/blog3.png" style="width:100%"
+                                 alt="project1 image1">
+                            <img class="modal-image slides2" src="static/project_pictures/blog4.png" style="width:100%"
+                                 alt="project1 image2">
+                            <img class="modal-image slides2" src="static/project_pictures/blog5.png" style="width:100%"
+                                 alt="project1 image3">
                             <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides2(1)">&#10095;</a>
                             <div class="imgchange" style="text-align:center">
@@ -205,20 +245,24 @@
                 </div>
             </div>
 
-        <!--        project3 modal-->
-        <div class="modal fade bd-modal-lg" id="project3-modal" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
+            <!--        project3 modal-->
+            <div class="modal fade bd-modal-lg" id="project3-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="project1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="project2">JEWEL OF CHINA</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="slideshow-container">
-                            <img class="modal-image slides3" src="static/project_pictures/game4.png" style="width:100%" alt="project1 image1">
-                            <img class="modal-image slides3" src="static/project_pictures/game2.png" style="width:100%" alt="project1 image2">
-                            <img class="modal-image slides3" src="static/project_pictures/game3.png" style="width:100%" alt="project1 image3">
+                            <img class="modal-image slides3" src="static/project_pictures/game4.png" style="width:100%"
+                                 alt="project1 image1">
+                            <img class="modal-image slides3" src="static/project_pictures/game2.png" style="width:100%"
+                                 alt="project1 image2">
+                            <img class="modal-image slides3" src="static/project_pictures/game3.png" style="width:100%"
+                                 alt="project1 image3">
                             <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides3(1)">&#10095;</a>
                             <div class="imgchange" style="text-align:center">
@@ -230,32 +274,37 @@
                         <div class="modal-body">
                             <div class="modal-feature-title">Features</div>
                             <div class="modal-intro">
-                                Used SQLite database engine as the container for the <a class="link" href="https://www.kaggle.com/uciml/zoo-animal-classification">
+                                Used SQLite database engine as the container for the <a class="link"
+                                                                                        href="https://www.kaggle.com/uciml/zoo-animal-classification">
                                 Zoo Animal Classification</a> database.
-                            In this guessing game, the app can successfully narrow down to one or two results within
-                            10 rounds through a SQLite statement sent to the database. The player can also input the
-                            animal that is not successfully guessed and its features to expand the data in the database.
+                                In this guessing game, the app can successfully narrow down to one or two results within
+                                10 rounds through a SQLite statement sent to the database. The player can also input the
+                                animal that is not successfully guessed and its features to expand the data in the
+                                database.
                             </div>
                             <div class="modal-feature-title">Motivation</div>
                             <div class="modal-intro">
-                            As my earliest project, this game developed from a pure Python terminal app into a
-                            website based on Python Flask. The motivation behind was to transform a game I always play
-                            in real life into an interactive computer app that has higher calculation capability.
-                            The original game starts with a person thinking of an animal and another person tries to
-                            guess the animal by asking different questions such as "does it have a tail".
-                            I always have trouble guessing. The results show that through a SQLite query,
-                            the more features you give, the faster the computer can locate the answer.
+                                As my earliest project, this game developed from a pure Python terminal app into a
+                                website based on Python Flask. The motivation behind was to transform a game I always
+                                play
+                                in real life into an interactive computer app that has higher calculation capability.
+                                The original game starts with a person thinking of an animal and another person tries to
+                                guess the animal by asking different questions such as "does it have a tail".
+                                I always have trouble guessing. The results show that through a SQLite query,
+                                the more features you give, the faster the computer can locate the answer.
                             </div>
-                             <div class="modal-feature-title">Challenge</div>
+                            <div class="modal-feature-title">Challenge</div>
                             <div class="modal-intro">
-                            All birds have feathers and animals that have feathers must be birds. However,
-                            the program does not know that unless you write the logic. The app first tends to
-                            ask all the questions about the features in the database, which is a useless move and
-                            reduces the success rate. My goal is to give the right answer within the fewest rounds,
-                            so the app has to eliminate the invalid question each round. After I optimized the SQLite
-                            query by creating a function to find valid questions after each 'ask',
-                            (eg. if all animals have the same feature, the feature is not a valid feature to be asked.)
-                            the app can locate the animal within 10 rounds.
+                                All birds have feathers and animals that have feathers must be birds. However,
+                                the program does not know that unless you write the logic. The app first tends to
+                                ask all the questions about the features in the database, which is a useless move and
+                                reduces the success rate. My goal is to give the right answer within the fewest rounds,
+                                so the app has to eliminate the invalid question each round. After I optimized the
+                                SQLite
+                                query by creating a function to find valid questions after each 'ask',
+                                (eg. if all animals have the same feature, the feature is not a valid feature to be
+                                asked.)
+                                the app can locate the animal within 10 rounds.
                             </div>
 
                         </div>
@@ -267,97 +316,181 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="about-section">
-    <div class="container">
-        <div class="about-header aboutme invisible ">ABOUT ME</div>
-        <div class="intro about-content invisible">
-            Hi, I am an academic turned web/software developer.
-            I am interested in building my clients fully-functional and responsive
-            websites. As a bilingual in English and Chinese. I can create Chinese website as well.
-        </div>
-        <div class="separation mb-2" id="skill">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
-        <div class="intro">
-            <div class="skill-title invisible">SKILLS</div>
-            <div class="row">
-                <div class="col"><div class="skill invisible">PYTHON</div></div>
-                <div class="col"><div class="skill invisible">FLASK</div></div>
-                <div class="col"><div class="skill invisible">HTML5</div></div>
-                <div class="col"><div class="skill invisible">JS</div></div>
-            <div class="w-100"></div>
-                <div class="col"><div class="skill invisible">CSS3</div></div>
-                <div class="col"><div class="skill invisible">BOOTSTRAP</div></div>
-                <div class="col"><div class="skill invisible">git</div></div>
-                <div class="col"><div class="skill invisible">WordPress</div></div>
-            </div>
-        </div>
-        <div class="separation mb-2" id="service">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
-        <div class="about-header service-title invisible">SERVICES</div>
-        <div class="row service-section">
-            <div class="col service-item service1 invisible">
-                <div class="col"><i class='fas fa-desktop' style='font-size:36px'></i></div>
-                <div class="col">WEBSITE</div>
-            </div>
-            <div class="col service-item service1 invisible">
-                <div class="col"><i class="fab fa-wordpress" style="font-size:36px"></i></div>
-                <div class="col">WORDPRESS</div>
+        <div class="modal fade bd-modal-lg" id="project4-modal" tabindex="-1" role="dialog" aria-labelledby="project4"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project1">WALLET WATCH</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="walle-img">
+                        <img class="modal-image" src="static/project_pictures/wallet4.png" style="width:100%"
+                             alt="project4 image4">
+                    </div>
 
-            </div>
-            <div class="col service-item service2 invisible">
-                <div class="col"><i class="fa fa-rocket" style="font-size:36px;"></i></div>
-                <div class="col">SOFTWARE</div>
-            </div>
-            <div class="col service-item service2 invisible">
-                <div class="col"><i class="fa fa-language" style="font-size:36px"></i></div>
-                <div class="col">LOCALIZATION</div>
+                    <div class="modal-body">
+                        <div class="modal-intro">
+                            Walletwatch.xyz is a database visualizing and displaying website made with Python backend
+                            and React frontend. The App is useful in tracking your bitcoin investment progress. Instead of
+                            calculating how much money gained since yesterday, last week, and last month, the visualized
+                            data in the line chart will allow you to check your bitcoin balance for every hour.
+                            By calling a Flask API, the Python backend requests the bitcoin wallet data from Blockchain.com
+                            API with a designated wallet address. React frontend will receive the data return from Flask API
+                            and create a line chart.
+
+                        </div>
+                        <div class="modal-feature-title">Features</div>
+                        <ul>
+                            <li>Visualization of Data in Line Chart (supported by VictoryChart)</li>
+                            <li>Fast Data Retrieving through customized Flask API</li>
+                            <li>Light React Frontend</li>
+                            <li>Data Accurate to Every Hour</li>
+                            <li>Zoom and Brush Functions for the Chart</li>
+                            <li>Light UI for Small Screen (coming soon)</li>
+                            <li>Check different cryptocurrency types (coming soon)</li>
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-section1" href="https://walletwatch.xyz/">View Website</a>
+                        <a class="btn btn-section1" href="https://github.com/mayue3081249/cryptocurrency_wallet_watch">Github</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div id="contact" class="footer-section">
-    <div class="contact">
-        <div class="contact-header">I'm currently available for freelance work</div>
-        <div><a data-toggle="collapse" href="#contacts" aria-expanded="false"
-       aria-controls="contacts" class="btn btn-section contact-btn" id="contactme" onclick="toggleHidden('contactme')">
-        Contact Me</a>
-        </div>
-        <form method="post" action="/" class="collapse" id="contacts">
-            {{form.hidden_tag()}}
-            <div class="form-group">
-                {{form.name(class="form-control form-control", placeholder="Add Name")}}
-                {{form.email(class="form-control form-control", placeholder="Add Email")}}
-                {{form.message(class="form-control form-control", placeholder="Add Message")}}
-                <div style="transform:scale(0.7); transform-origin:0 0">{{ form.recap }}</div>
-
-            <div class="submit">
-                {{form.submit(class="btn btn-section")}}
-            </div>
-            </div>
-        </form>
     </div>
 
 
-    <footer>
-        <div class="foot-section">
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/yue-madeleine-ma-127285189/"><i class="fa fa-linkedin-square icon" style="font-size:30px"></i></a>
-                <a href="https://github.com/mayue3081249"><i class="fa fa-github icon" style="font-size:30px"></i></a>
-                <a href="https://www.upwork.com/freelancers/~01069e866e8d213536"><i class="iconify icon upwork" data-icon="simple-icons:upwork" data-inline="false" style="font-size:50px"></i></a>
+
+
+    <div class="about-section">
+        <div class="container">
+            <div class="about-header aboutme invisible ">ABOUT ME</div>
+            <div class="intro about-content invisible">
+                Hi, I am an academic turned web/software developer.
+                I am interested in building my clients fully-functional and responsive
+                websites. As a bilingual in English and Chinese. I can create Chinese website as well.
             </div>
-            <div class="copyright">
-                <small>Designed by <a class="copy-link" href="https://madeleinema.com/">Madeleine Ma</a> <i class="fa fa-copyright"></i> Copyright 2020</small>
+            <div class="separation mb-2" id="skill">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
+            <div class="intro">
+                <div class="skill-title invisible">SKILLS</div>
+                <div class="row">
+                    <div class="col">
+                        <div class="skill invisible">PYTHON</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">FLASK</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">React</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">JavaScript</div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="skill invisible">CSS3</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">BOOTSTRAP</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">HTML5</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">SQL</div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="skill invisible">Git</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">Linux</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">Azure</div>
+                    </div>
+                    <div class="col">
+                        <div class="skill invisible">Pandas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="separation mb-2" id="service">⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹</div>
+            <div class="about-header service-title invisible">SERVICES</div>
+            <div class="row service-section">
+                <div class="col service-item service1 invisible">
+                    <div class="col"><i class='fas fa-desktop' style='font-size:36px'></i></div>
+                    <div class="col">WEBSITE</div>
+                </div>
+                <div class="col service-item service1 invisible">
+                    <div class="col"><i class="fab fa-wordpress" style="font-size:36px"></i></div>
+                    <div class="col">WORDPRESS</div>
+
+                </div>
+                <div class="col service-item service2 invisible">
+                    <div class="col"><i class="fa fa-rocket" style="font-size:36px;"></i></div>
+                    <div class="col">SOFTWARE</div>
+                </div>
+                <div class="col service-item service2 invisible">
+                    <div class="col"><i class="fa fa-language" style="font-size:36px"></i></div>
+                    <div class="col">LOCALIZATION</div>
+                </div>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+
+    <div id="contact" class="footer-section">
+        <div class="contact">
+            <div class="contact-header">I'm currently available for freelance work</div>
+            <div><a data-toggle="collapse" href="#contacts" aria-expanded="false"
+                    aria-controls="contacts" class="btn btn-section contact-btn" id="contactme"
+                    onclick="toggleHidden('contactme')">
+                Contact Me</a>
+            </div>
+            <form method="post" action="/" class="collapse" id="contacts">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.name(class="form-control form-control", placeholder="Add Name") }}
+                    {{ form.email(class="form-control form-control", placeholder="Add Email") }}
+                    {{ form.message(class="form-control form-control", placeholder="Add Message") }}
+                    <div style="transform:scale(0.7); transform-origin:0 0">{{ form.recap }}</div>
+
+                    <div class="submit">
+                        {{ form.submit(class="btn btn-section") }}
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <footer>
+            <div class="foot-section">
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/yue-madeleine-ma-127285189/"><i
+                        class="fa fa-linkedin-square icon" style="font-size:30px"></i></a>
+                    <a href="https://github.com/mayue3081249"><i class="fa fa-github icon"
+                                                                 style="font-size:30px"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01069e866e8d213536"><i class="iconify icon upwork"
+                                                                                        data-icon="simple-icons:upwork"
+                                                                                        data-inline="false"
+                                                                                        style="font-size:50px"></i></a>
+                </div>
+                <div class="copyright">
+                    <small>Designed by <a class="copy-link" href="https://madeleinema.com/">Madeleine Ma</a> <i
+                        class="fa fa-copyright"></i> Copyright 2020</small>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 {% endblock %}
 
 {% block script %}
-<script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
 {% endblock %}
 
